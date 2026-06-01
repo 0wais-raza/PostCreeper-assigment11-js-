@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+     background-color: #1c0d2b;
+     color: white;
+     margin: 0;
+     padding: 0;
+     font-family: "Genos", sans-serif;
+     font-size: 40px;
+     overflow-x: hidden;
+}
+
+video {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -100;
+     background-size: cover;
+     object-fit: cover;
+     opacity: 20%;
+}
+
+
+#header {
+     background-color: rgba(137, 43, 226, 0.623);
+     color: white;
+     font-weight: 600;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 40px;
+     height: 110px;
+     gap: 20px;
+     box-shadow: 0 0 10px rgba(32, 32, 32, 0.678);
+}
+
+
+#add {
+     padding: 20px;
+     margin-top: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+}
+
+#inp {
+     outline: none;
+     border: none;
+     padding: 10px;
+     font-size: 20px;
+     background-color: rgba(137, 43, 226, 0.623);
+     border-radius: 20px;
+     height: 40px;
+     width: 800px;
+     box-shadow: 0 0 10px rgba(32, 32, 32, 0.678), inset 1px 4px 4px rgb(202, 164, 214);
+     color: white;
+}
+
+#inp:focus {
+     box-shadow: 0 0 10px rgba(32, 32, 32, 0.678), inset 2px 0px 0px rgb(202, 164, 214);
+
+}
+
+#inp::placeholder {
+     color: #3a1d5785;
+}
+
+#button {
+     background-color: rgba(137, 43, 226, 0.623);
+     color: white;
+     border-radius: 20px;
+     padding-left: 20px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+     padding-right: 20px;
+     outline: none;
+     border: none;
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     cursor: pointer;
+     box-shadow: 0 0 10px rgba(32, 32, 32, 0.678), inset 1px 4px 4px rgb(202, 164, 214);
+     transition: 0.1s ease;
+}
+
+#button:hover {
+     background-color: rgba(115, 22, 202, 0.473);
+}
+
+#button:active {
+     box-shadow: 0 0 10px rgba(32, 32, 32, 0.678), inset 3px 2px 4px rgb(202, 164, 214);
+}
+
+#feed {
+     height: fit-content;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: 20px;
+     flex-wrap: wrap;
+     flex-direction: column;
+     padding-top: 30px;
+}
+
+.box {
+     background-color: rgba(115, 22, 202, 0.473);
+     width: 80%;
+     height: fit-content;
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 30px;
+     backdrop-filter: blur(5px);
+     box-shadow: 0 0 10px rgba(32, 32, 32, 0.678), inset 2px 0px 3px rgb(202, 164, 214);
+     font-size: 27px;
+}
+
+#foot {
+     font-size: 25px;
+     padding-left: 20px;
+     padding-right: 20px;
+     border-radius: 70px;
+     position: fixed;
+     top: 90%;
+     left: 77%;
+     background-color: #3a1d57bb;
+}
+
+#foot a{
+     color: #a255f0;
+     text-decoration: none;
+}
+
+.buttons {
+     display: flex;
+     gap: 10px;
+}
+
+.buttons button {
+     background-color: #1c0d2b;
+     border: none;
+     outline: none;
+     padding: 20px;
+     color: white;
+     border-radius: 50%;
+     width: 60px;
+     cursor: pointer;
+     box-shadow: 0 0 3px rgba(32, 32, 32, 0.678), inset 1px 1px 3px rgb(202, 164, 214);
+}
+
+.buttons button:hover {
+     background-color: #3a1d57;
+}

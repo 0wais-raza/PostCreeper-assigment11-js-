@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+     <title>PostCreeper</title>
+</head>
+<style>
+     body {
+          font-family: "Genos", sans-serif;
+          background-color: #1c0d2b;
+          color: #fff;
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(277deg, #28123c 0%, #561c8d 3%, #28123c 100%);
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+     }
+
+
+     .head {
+          background-color: rgba(137, 43, 226, 0.26);
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: translateY(0px);
+          animation: inHead 4s ease-out;
+          box-shadow: 0 0 20px rgba(53, 52, 52, 0.733);
+          backdrop-filter: blur(7px);
+     }
+
+     @keyframes inHead {
+          from {
+               transform: translateY(-200px);
+          }
+
+          to {
+               transform: translateY(0px);
+          }
+     }
+
+     .main {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 80vh;
+     }
+
+     .left img {
+          width: 400px;
+          transform: rotate3d(4, 3, -1, 30deg);
+     }
+
+     .left {
+          transform: translateX(0px);
+          animation: inLeft 0.8s ease-in-out;
+     }
+
+     @keyframes inLeft {
+          from {
+               transform: translateX(-200px);
+          }
+
+          to {
+               transform: translateX(0px);
+          }
+     }
+
+     @keyframes inRight {
+          from {
+               transform: translateX(200px);
+          }
+
+          to {
+               transform: translateX(0px);
+          }
+     }
+
+     .right {
+          font-size: 23px;
+          line-height: 40px;
+          transform: translateX(0px);
+          animation: inRight 0.8s ease-out;
+     }
+
+     .right .a1 {
+          background-color: #561c8d;
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          padding-left: 50px;
+          padding-right: 50px;
+          border-radius: 50px;
+          box-shadow: inset 5px 3px 10px #a465df;
+          transition: 0.1s ease
+     }
+
+     .right .a2 {
+          color: #fff;
+          text-decoration: none;
+          padding: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          border-radius: 50px;
+          border: solid 1px #a465df;
+          box-shadow: inset 1px 1px 2px #a465df;
+          transition: 0.1s ease
+     }
+
+     .right a:hover {
+          background-color: #742db6;
+     }
+
+     video {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: -100;
+          background-size: cover;
+          object-fit: cover;
+          opacity: 20%;
+     }
+</style>
+
+<body>
+     <div class="head">
+          <img src="logo.png" alt="" width="100px">
+          <h1>The PostCreeper</h1>
+     </div>
+     <div class="main">
+          <div class="left">
+               <img src="logo.png" alt="">
+          </div>
+          <div class="right">
+               <h1>Share Ur Experience, <br> When Creeper blasts!! xD</h1><br>
+               <a href="page.html" class="a1">Get Started</a>  <a href="https://github.com/0wais-raza" target="_blank"
+                    class="a2">By Owais Raza</a>
+          </div>
+     </div>
+     <video src="bg.mp4" autoplay mute loop></video>
+</body>
+
+</html>
